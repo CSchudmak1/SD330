@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cole Schudmak - Fridge Display </title>
+<style>
+  #monitor {width: 400px; height: 300px; border: 2px solid black; position: relative;}
+  
+  #clock {position: absolute; top: 10px; right: 10px; font-size: 18px;}
+
+  #temperature {position: absolute; top: 40px; left: 10px; font-size: 18px;}
+
+  #content {position: absolute; top: 80px; left: 10px; width: 380px; height: 200px; background-color: #eee; overflow: hidden;}
+
+  #displayedImage {width: 100%; height: 100%; object-fit: cover;}
+
+  .button {padding: 10px; margin: 5px; cursor: pointer;}
+</style>
+</head>
+<body>
+
+<div id="monitor">
+  <div id="clock"></div>
+  <div id="temperature"></div>
+  <div id="content">
+    <img id="displayedImage" src="https://yt3.googleusercontent.com/ytc/AIdro_n8t9vSNnlVSIa9mdGNBoiXkDbUhEUeTAGVZDeoww=s900-c-k-c0x00ffffff-no-rj">
+  </div>
+  <button class="button" onclick="togglePower()">Power</button>
+</div>
+
+<script>
+  let powerOn = true;
+
+  function togglePower() {
+    powerOn = !powerOn;
+    if (powerOn) {
+      startClock();
+      document.getElementById('temperature').style.display = 'block';
+      document.getElementById('content').style.display = 'block';
+      startTemperature();
+    } else {
+      stopClock();
+      stopTemperature();
+      document.getElementById('temperature').style.display = 'none';
+      document.getElementById('content').style.display = 'none';
+    }
+  }
+
+  function startClock() {
+    updateTime();
+    setInterval(updateTime, 1000);
+  }
+
+  function stopClock() {
+    clearInterval(updateTime);
+  }
+
+  function updateTime() {
+    const now = new Date();
+    const hours = now.getHours().toString().padStart(2, '0');
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const seconds = now.getSeconds().toString().padStart(2, '0');
+    document.getElementById('clock').innerHTML = `${hours}:${minutes}:${seconds}`;
+  }
+
+  function startTemperature() {
+    updateTemperature();
+    setInterval(updateTemperature, 5000);  }
+
+  function stopTemperature() {
+    clearInterval(updateTemperature);
+  }
+
+  function updateTemperature() {
+    const temperature = Math.floor(Math.random() * 15) + 1;    document.getElementById('temperature').innerHTML = `Temperature: ${temperature}°C`;
+  }
+</script>
+
+<footer>
+  <hr>
+  <p> &copy; Cole Schudmak 3/3/24</p>
+</footer>
+
+</body>
+</html>
+
