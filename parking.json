@@ -1,0 +1,654 @@
+{
+  "parking_lots": [
+    {
+      "name": "Foy",
+      "map_filename": "mapFoy.jpg",
+      "total_spaces": 12,
+      "comments": "Close to north end",
+      "spaces": [
+        {
+          "space_id": 1,
+          "type": "faculty/staff",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 2,
+          "type": "student",
+          "status": "filled",
+          "filled_datetime": "2024-04-24T10:30:00",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 3,
+          "type": "handicap",
+          "status": "reserved",
+          "filled_datetime": "",
+          "reserved_datetime": "2024-04-25T09:00:00"
+        },
+        {
+          "space_id": 4,
+          "type": "faculty/staff",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 5,
+          "type": "student",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 6,
+          "type": "faculty/staff",
+          "status": "filled",
+          "filled_datetime": "2024-04-24T09:45:00",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 7,
+          "type": "student",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 8,
+          "type": "faculty/staff",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 9,
+          "type": "handicap",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 10,
+          "type": "student",
+          "status": "filled",
+          "filled_datetime": "2024-04-24T10:15:00",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 11,
+          "type": "faculty/staff",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 12,
+          "type": "student",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        }
+      ]
+    },
+    {
+      "name": "Riverview",
+      "map_filename": "mapRiverview.jpg",
+      "total_spaces": 15,
+      "comments": "At MidRise",
+      "spaces": [
+        {
+        "space_id": 1,
+          "type": "faculty/staff",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 2,
+          "type": "student",
+          "status": "filled",
+          "filled_datetime": "2024-04-24T10:30:00",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 3,
+          "type": "handicap",
+          "status": "reserved",
+          "filled_datetime": "",
+          "reserved_datetime": "2024-04-25T09:00:00"
+        },
+        {
+          "space_id": 4,
+          "type": "faculty/staff",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 5,
+          "type": "student",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 6,
+          "type": "student",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 7,
+          "type": "faculty/staff",
+          "status": "filled",
+          "filled_datetime": "2024-04-24T09:45:00",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 8,
+          "type": "student",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 9,
+          "type": "faculty/staff",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 10,
+          "type": "handicap",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 11,
+          "type": "student",
+          "status": "filled",
+          "filled_datetime": "2024-04-24T10:15:00",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 12,
+          "type": "faculty/staff",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 13,
+          "type": "student",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 14,
+          "type": "faculty/staff",
+          "status": "filled",
+          "filled_datetime": "2024-04-24T09:30:00",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 15,
+          "type": "student",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        }
+      ]
+    },
+    {
+      "name": "Donnelly",
+      "map_filename": "mapDonnelly.jpg",
+      "total_spaces": 12,
+      "comments": "Close to main entrance",
+      "spaces": [
+        {
+          "space_id": 1,
+          "type": "student",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 2,
+          "type": "faculty/staff",
+          "status": "filled",
+          "filled_datetime": "2024-04-24T08:45:00",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 3,
+          "type": "handicap",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 4,
+          "type": "student",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 5,
+          "type": "faculty/staff",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 6,
+          "type": "student",
+          "status": "filled",
+          "filled_datetime": "2024-04-24T10:00:00",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 7,
+          "type": "faculty/staff",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 8,
+          "type": "student",
+          "status": "filled",
+          "filled_datetime": "2024-04-24T09:15:00",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 9,
+          "type": "faculty/staff",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 10,
+          "type": "student",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 11,
+          "type": "faculty/staff",
+          "status": "filled",
+          "filled_datetime": "2024-04-24T10:30:00",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 12,
+          "type": "student",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+         }
+      ]
+    },
+    {
+      "name": "Dyson",
+      "map_filename": "mapDyson.jpg",
+      "total_spaces": 12,
+      "comments": "Next to Foy",
+      "spaces": [
+        {
+          "space_id": 1,
+          "type": "student",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 2,
+          "type": "faculty/staff",
+          "status": "filled",
+          "filled_datetime": "2024-04-24T08:30:00",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 3,
+          "type": "student",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 4,
+          "type": "faculty/staff",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 5,
+          "type": "student",
+          "status": "filled",
+          "filled_datetime": "2024-04-24T09:00:00",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 6,
+          "type": "faculty/staff",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 7,
+          "type": "student",
+          "status": "filled",
+          "filled_datetime": "2024-04-24T09:45:00",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 8,
+          "type": "faculty/staff",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 9,
+          "type": "student",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 10,
+          "type": "faculty/staff",
+          "status": "filled",
+          "filled_datetime": "2024-04-24T10:15:00",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 11,
+          "type": "student",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 12,
+          "type": "faculty/staff",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+         }
+      ]
+    },
+    {
+      "name": "McCann",
+      "map_filename": "mapMccann.jpg",
+      "total_spaces": 20,
+      "comments": "Close to entrance, by the baseball field",
+      "spaces": [
+        {
+          "space_id": 1,
+          "type": "student",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 2,
+          "type": "faculty/staff",
+          "status": "filled",
+          "filled_datetime": "2024-04-24T08:30:00",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 3,
+          "type": "student",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 4,
+          "type": "faculty/staff",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 5,
+          "type": "student",
+          "status": "filled",
+          "filled_datetime": "2024-04-24T09:00:00",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 6,
+          "type": "faculty/staff",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 7,
+          "type": "student",
+          "status": "filled",
+          "filled_datetime": "2024-04-24T09:45:00",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 8,
+          "type": "faculty/staff",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 9,
+          "type": "student",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 10,
+          "type": "faculty/staff",
+          "status": "filled",
+          "filled_datetime": "2024-04-24T10:15:00",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 11,
+          "type": "student",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 12,
+          "type": "faculty/staff",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 13,
+          "type": "student",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 14,
+          "type": "faculty/staff",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 15,
+          "type": "student",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 16,
+          "type": "faculty/staff",
+          "status": "filled",
+          "filled_datetime": "2024-04-24T10:30:00",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 17,
+          "type": "student",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 18,
+          "type": "faculty/staff",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 19,
+          "type": "student",
+          "status": "filled",
+          "filled_datetime": "2024-04-24T11:00:00",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 20,
+          "type": "faculty/staff",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        }
+      ]
+    },
+    {
+      "name": "Fulton",
+      "map_filename": "mapFulton.jpg",
+      "total_spaces": 15,
+      "comments": "Southmost lot",
+      "spaces": [
+        {
+          "space_id": 1,
+          "type": "student",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 2,
+          "type": "faculty/staff",
+          "status": "filled",
+          "filled_datetime": "2024-04-24T08:30:00",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 3,
+          "type": "student",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 4,
+          "type": "faculty/staff",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 5,
+          "type": "student",
+          "status": "filled",
+          "filled_datetime": "2024-04-24T09:00:00",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 6,
+          "type": "faculty/staff",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 7,
+          "type": "student",
+          "status": "filled",
+          "filled_datetime": "2024-04-24T09:45:00",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 8,
+          "type": "faculty/staff",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 9,
+          "type": "student",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 10,
+          "type": "faculty/staff",
+          "status": "filled",
+          "filled_datetime": "2024-04-24T10:15:00",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 11,
+          "type": "student",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 12,
+          "type": "faculty/staff",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 13,
+          "type": "student",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 14,
+          "type": "faculty/staff",
+          "status": "filled",
+          "filled_datetime": "2024-04-24T11:00:00",
+          "reserved_datetime": ""
+        },
+        {
+          "space_id": 15,
+          "type": "student",
+          "status": "available",
+          "filled_datetime": "",
+          "reserved_datetime": ""
+        }
+      ]
+    }
+  ]
+}
