@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foy Lot</title>
+<style>
+  body {
+    background-color: red;
+  }
+</style>
+</head>
+<body>
+
+<h1><a href="https://cschudmak1.github.io/SD330//parking.html">Marist Parking App</a></h1>
+
+<div id="foyParkingStatus"></div>
+
+<script>
+fetch('https://cschudmak1.github.io/SD330/parking.json')
+  .then(response => response.json())
+  .then(data => {
+    const foyParkingLot = data.parking_lots.find(parkingLot => parkingLot.name === "Foy");
+
+    if (foyParkingLot) {
+      const availableSpaces = foyParkingLot.spaces.filter(space => space.status === "available").length;
+
+      const foyParkingStatusElement = document.getElementById('foyParkingStatus');
+      foyParkingStatusElement.innerHTML = `
+        <h2>${foyParkingLot.name} Parking Lot</h2>
+        <p>Total Spaces: ${foyParkingLot.total_spaces}</p>
+        <p>Occupied Spaces: ${foyParkingLot.total_spaces - availableSpaces}</p>
+        <p>Available Spaces: ${availableSpaces}</p>
+      `;
+    } else {
+      const foyParkingStatusElement = document.getElementById('foyParkingStatus');
+      foyParkingStatusElement.innerHTML = "<p>Data for Foy Parking Lot not found.</p>";
+    }
+  })
+  .catch(error => {
+    console.error('Error fetching data:', error);
+  });
+</script>
+
+<div>
+  <img src="https://cschudmak1.github.io/SD330//foylot.jpg" alt="Parking Lot Image">
+</div>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riverview Lot</title>
+<style>
+  body {
+    background-color: red;
+  }
+</style>
+</head>
+<body>
+
+<h1><a href="#">Marist Parking App</a></h1>
+
+<div id="parkingStatus"></div>
+
+<script>
+fetch('https://cschudmak1.github.io/SD330/parking.json')
+  .then(response => response.json())
+  .then(data => {
+    const riverviewParkingLot = data.parking_lots.find(parkingLot => parkingLot.name === "Riverview");
+
+    if (riverviewParkingLot) {
+      const availableSpaces = riverviewParkingLot.spaces.filter(space => space.status === "available").length;
+
+      const parkingStatusElement = document.getElementById('parkingStatus');
+      parkingStatusElement.innerHTML = `
+        <h2>${riverviewParkingLot.name} Parking Lot</h2>
+        <p>Total Spaces: ${riverviewParkingLot.total_spaces}</p>
+        <p>Occupied Spaces: ${riverviewParkingLot.total_spaces - availableSpaces}</p>
+        <p>Available Spaces: ${availableSpaces}</p>
+      `;
+    } else {
+      const parkingStatusElement = document.getElementById('parkingStatus');
+      parkingStatusElement.innerHTML = "<p>Data for Riverview Parking Lot not found.</p>";
+    }
+  })
+  .catch(error => {
+    console.error('Error fetching data:', error);
+  });
+</script>
+
+<div>
+  <img src="https://cschudmak1.github.io/SD330//riverviewlot.jpg" alt="Parking Lot Image">
+</div>
+
+</body>
+</html>
