@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>McCann Lot</title>
+<style>
+  body {
+    background-color: red;
+  }
+</style>
+</head>
+<body>
+
+<h1><a href="https://cschudmak1.github.io/SD330//parking.html">Marist Parking App</a></h1>
+
+<div id="mccannParkingStatus"></div>
+
+<script>
+fetch('https://cschudmak1.github.io/SD330/parking.json')
+  .then(response => response.json())
+  .then(data => {
+    const mccannParkingLot = data.parking_lots.find(parkingLot => parkingLot.name === "McCann");
+
+    if (mccannParkingLot) {
+      const availableSpaces = mccannParkingLot.spaces.filter(space => space.status === "available").length;
+
+      const mccannParkingStatusElement = document.getElementById('mccannParkingStatus');
+      mccannParkingStatusElement.innerHTML = `
+        <h2>${mccannParkingLot.name} Parking Lot</h2>
+        <p>Total Spaces: ${mccannParkingLot.total_spaces}</p>
+        <p>Occupied Spaces: ${mccannParkingLot.total_spaces - availableSpaces}</p>
+        <p>Available Spaces: ${availableSpaces}</p>
+      `;
+    } else {
+      const mccannParkingStatusElement = document.getElementById('mccannParkingStatus');
+      mccannParkingStatusElement.innerHTML = "<p>Data for McCann Parking Lot not found.</p>";
+    }
+  })
+  .catch(error => {
+    console.error('Error fetching data:', error);
+  });
+</script>
+
+<div>
+  <img src="https://cschudmak1.github.io/SD330//mccannlot.jpg" alt="Parking Lot Image">
+</div>
+
+</body>
+</html>
