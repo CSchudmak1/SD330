@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donnelly Lot</title>
+<style>
+  body {
+    background-color: red;
+  }
+</style>
+</head>
+<body>
+
+<h1><a href="https://cschudmak1.github.io/SD330//parking.html">Marist Parking App</a></h1>
+
+<div id="donnellyParkingStatus"></div>
+
+<script>
+fetch('https://cschudmak1.github.io/SD330/parking.json')
+  .then(response => response.json())
+  .then(data => {
+    const donnellyParkingLot = data.parking_lots.find(parkingLot => parkingLot.name === "Donnelly");
+
+    if (donnellyParkingLot) {
+      const availableSpaces = donnellyParkingLot.spaces.filter(space => space.status === "available").length;
+
+      const donnellyParkingStatusElement = document.getElementById('donnellyParkingStatus');
+      donnellyParkingStatusElement.innerHTML = `
+        <h2>${donnellyParkingLot.name} Parking Lot</h2>
+        <p>Total Spaces: ${donnellyParkingLot.total_spaces}</p>
+        <p>Occupied Spaces: ${donnellyParkingLot.total_spaces - availableSpaces}</p>
+        <p>Available Spaces: ${availableSpaces}</p>
+      `;
+    } else {
+      const donnellyParkingStatusElement = document.getElementById('donnellyParkingStatus');
+      donnellyParkingStatusElement.innerHTML = "<p>Data for Donnelly Parking Lot not found.</p>";
+    }
+  })
+  .catch(error => {
+    console.error('Error fetching data:', error);
+  });
+</script>
+
+<div>
+  <img src="https://cschudmak1.github.io/SD330//donnellylot.jpg" alt="Parking Lot Image">
+</div>
+
+</body>
+</html>
